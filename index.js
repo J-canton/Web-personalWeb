@@ -32,7 +32,7 @@ app.get('/portfolio',
 
 app.get('/games/arkanoid', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/games/arkanoid/index.html'))
+        res.sendFile(path.join(__dirname + '/public/games/arkanoid/index.html'));
     }
 )
 
