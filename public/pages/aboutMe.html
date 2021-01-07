@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MonsterPlay | User Profile</title>
+        <title>JCANTON | About Me</title>
         <meta name="description" content="MonsterPlay - Superpower for Gaming Websites">
         <meta name="keywords" content="gaming, game, esports, community, template, html, bootstrap, webpack">
         <meta name="author" content="nK">
@@ -88,7 +88,7 @@
         </div>
     </nav>
     <!-- /Navbar -->
-        <!-- Navbar Mobile -->
+     <!-- Navbar Mobile -->
         <nav class="mpl-navbar mpl-navbar-mobile">
             <div class="mpl-navbar-container">
                 <div class="mpl-navbar-head">
@@ -130,19 +130,22 @@
             <div>
                 <section class="mpl-banner mpl-banner-top mpl-banner-parallax mpl-banner-small">
                     <div class="mpl-image" data-speed="0.8">
-                        <img src="../assets/images/dark/bg-banner-2.jpg" alt="" class="jarallax-img">
+                        <img id="aboutHeader" class="jarallax-img">
                     </div>
-                    <div class="mpl-banner-content mpl-box-lg">
-         
-                    </div>
+                    <div class="mpl-banner-content mpl-box-lg"></div>
                 </section>
+
                 <div class="mpl-box-md">
                     <div class="container">
                         <div class="row hgap-lg vgap-lg">
                             <div class="col-lg mpl-content" data-sr="user-profile" data-sr-duration="1000" data-sr-distance="20">
-                                <h2 class="h3" data-sr-item="user-profile">Juan Luis Cantón</h2>
-                                <table class="table mpl-table-profile" data-sr-item="user-profile">
+                                <h2 class="h3" data-sr-item="user-profile" style="visibility: visible;">Personal Information</h2>
+                                <table class="table mpl-table-profile" data-sr-item="user-profile" style="visibility: visible;">
                                     <tbody>
+                                        <tr>
+                                            <td>Current City</td>
+                                            <td><a href="#">New York</a></td>
+                                        </tr>
                                         <tr>
                                             <td>Current City</td>
                                             <td><a href="#">New York</a></td>
@@ -160,62 +163,24 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <h2 class="h3" data-sr-item="user-profile">Web Skills</h2>
-                                <table class="table mpl-table-profile" data-sr-item="user-profile">
-                                    <tbody>
-                                        <tr>
-                                            <td>Javascript</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Html5</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Css3</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>React js</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Node js</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ux/ui</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
-                            <div class="col-auto mpl-sidebar" data-sr="widget" data-sr-duration="1200" data-sr-distance="20">
-                                <h2 class="h3" data-sr-item="user-profile">Web Skills</h2>
+                            <div class="col-auto-lg mpl-sidebar" data-sr="widget" data-sr-duration="1200" data-sr-distance="20">
+                                <div class="mpl-widget mpl-widget-about">
+                                    <h4 class="mpl-widget-title">Web Skills</h4>
+                                    <div data-sr-item="widget" style="visibility: visible;">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mpl-widget mpl-widget-about">
+                                    <h4 class="mpl-widget-title">Web Skills</h4>
+                                    <div data-sr-item="widget" style="visibility: visible;">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -223,50 +188,33 @@
                 <!-- Footer -->
                 <div class="mpl-footer-copyright">
                     <div class="container">
-                        <p>2020 &copy; <a href="https://1.envato.market/nk-portfolio" target="_blank">jcanton</a>. All rights reserved</p>
+                        <p id="copyright"></p>
                     </div>
                 </div>
                 <!-- /Footer -->
             </div>
         </div>
-        <!-- START: Scripts -->
-        <!-- Object Fit Polyfill -->
+        <script src="../assets/js/js/configs.js"></script>
+        <script src="../assets/js/js/commons.js"></script>
         <script src="../assets/vendor/object-fit-images/dist/ofi.min.js"></script>
-        <!-- Popper -->
         <script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-        <!-- ScrollReveal -->
         <script src="../assets/vendor/scrollreveal/dist/scrollreveal.min.js"></script>
-        <!-- Animejs -->
         <script src="../assets/vendor/animejs/lib/anime.min.js"></script>
-        <!-- Bootstrap -->
         <script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- Jarallax -->
         <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
-        <!-- Swiper -->
         <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <!-- Fancybox -->
         <script src="../assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-        <!-- jQuery Countdown -->
         <script src="../assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
-        <!-- Moment.js -->
         <script src="../assets/vendor/moment/min/moment.min.js"></script>
         <script src="../assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
-        <!-- Revolution Slider -->
         <script src="../assets/vendor/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
         <script src="../assets/vendor/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <!-- ImagesLoaded -->
         <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <!-- Isotope -->
         <script src="../assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
-        <!-- Ion Range Slider -->
         <script src="../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-        <!-- Bootstrap TouchSpin -->
         <script src="../assets/vendor/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
-        <!-- Bootstrap Validator -->
         <script src="../assets/vendor/bootstrap-validator/dist/validator.min.js"></script>
-        <!-- MonsterPlay -->
         <script src="../assets/js/monsterplay.min.js"></script>
         <script src="../assets/js/monsterplay-init.js"></script>
-        <!-- END: Scripts -->
     </body>
 </html>
