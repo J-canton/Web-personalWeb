@@ -1,6 +1,7 @@
 const express = require('express');
-var app = express();
-var path = require('path');
+const app = express();
+const path = require('path');
+const emailSender = require('./app/controller/mailController');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -26,7 +27,7 @@ app.get('/aboutMe',
 
 app.get('/portfolio', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/pages/index.html'))
+        res.sendFile(path.join(__dirname + '/public/pages/portfolio.html'))
     }
 )
 
@@ -35,6 +36,10 @@ app.get('/games/arkanoid',
         res.sendFile(path.join(__dirname + '/public/games/arkanoid/index.html'));
     }
 )
+
+app.post('/sendMail', (req,res)=>{
+  emailSender.sendEmail(req,res);  
+})
 
 app.use(
     (req,res,next)=>{
