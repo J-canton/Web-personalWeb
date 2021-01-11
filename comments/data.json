@@ -1,0 +1,10 @@
+{
+    "sendeds":[
+        {
+            "name": "mismo",
+            "email": "mismo@mismo.com",
+            "subject": "mismo subject",
+            "message": "Lorem ipsum dolor sit amet"
+        }
+    ]
+}
