@@ -34,7 +34,7 @@ const configs = {
                 tabAll: 'All', 
                 tabGames: 'Games',
                 tab3d: '3D',
-                tabConcept: 'ConceptArt',
+                tabConcept: 'Concept Art',
                 tabDesign: 'Design'
             },
             game:
