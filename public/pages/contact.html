@@ -25,7 +25,7 @@
         <!-- Preloader -->
         <div class="mpl-preloader">
             <div class="mpl-preloader-content">
-                <div class="mpl-preloader-title display-1 h1">JCANTON</div>
+                <div id="preloader" class="mpl-preloader-title display-1 h1"></div>
                 <div class="mpl-preloader-progress">
                     <div></div>
                 </div>
@@ -33,44 +33,60 @@
         </div>
         <div class="mpl-preloader-bg"></div>
         <!-- /Preloader -->
-     <!-- Navbar -->
-     <nav class="mpl-navbar-top mpl-navbar">
-        <div class="mpl-navbar-mobile-overlay"></div>
-        <div class="container mpl-navbar-container">
-            <a href="#" class="mpl-navbar-toggle"></a>
-            <div class="mpl-navbar-brand">
-                <a href="/">
-                    <img src="../assets/images/logo-studio.svg" alt="">
-                </a>
+        <!-- Navbar -->
+        <nav class="mpl-navbar-top mpl-navbar">
+            <div class="mpl-navbar-mobile-overlay"></div>
+            <div class="container mpl-navbar-container">
+                <a href="#" class="mpl-navbar-toggle"></a>
+                <div class="mpl-navbar-brand">
+                    <a href="/">
+                        <img src="assets/images/logo-studio.svg" alt="">
+                    </a>
+                </div>
+                <div class="mpl-navbar-content">
+                    <ul class="mpl-navbar-nav active">
+                        <li>
+                            <a href="/aboutMe" class="mpl-nav-link">
+                                <span id="navAbout" class="mpl-nav-link-name"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/portfolio" class="mpl-nav-link">
+                                <span id="navWorks" class="mpl-nav-link-name"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="mpl-nav-link">
+                                <span id="navContact" class="mpl-nav-link-name"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mpl-navbar-nav mpl-navbar-right">
+                        <li>
+                            <a href="https://twitter.com/juanluiscanton4" target="_blank" class="mpl-nav-link">
+                                <svg class="icon icon-fill" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.533 7.11163C21.5482 7.32482 21.5482 7.53805 21.5482 7.75124C21.5482 14.2537 16.599 21.7461 7.5533 21.7461C4.76648 21.7461 2.17767 20.939 0 19.538C0.395953 19.5837 0.776625 19.5989 1.18781 19.5989C3.48727 19.5989 5.60405 18.8223 7.29441 17.4974C5.13197 17.4517 3.31978 16.0355 2.69541 14.0863C3 14.1319 3.30455 14.1624 3.62437 14.1624C4.06598 14.1624 4.50764 14.1014 4.91878 13.9949C2.66498 13.538 0.974578 11.5583 0.974578 9.16747V9.10658C1.62937 9.47206 2.39086 9.70049 3.19791 9.73091C1.87303 8.84764 1.00505 7.34005 1.00505 5.63446C1.00505 4.72077 1.24866 3.88321 1.67508 3.15224C4.09641 6.137 7.73602 8.08621 11.8172 8.29944C11.7411 7.93396 11.6954 7.55328 11.6954 7.17257C11.6954 4.46188 13.8883 2.25378 16.6141 2.25378C18.0304 2.25378 19.3095 2.84769 20.208 3.80708C21.3197 3.59389 22.3857 3.18271 23.3299 2.61927C22.9643 3.76142 22.1877 4.72082 21.1674 5.32991C22.1573 5.22336 23.1167 4.94919 23.9999 4.56852C23.33 5.5431 22.4924 6.41108 21.533 7.11163Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/JcantonArt-101351391928181" target="_blank" class="mpl-nav-link">
+                                <svg class="icon icon-fill" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.625 12C23.625 5.57812 18.4219 0.375 12 0.375C5.57812 0.375 0.375 5.57812 0.375 12C0.375 17.8022 4.62609 22.6116 10.1836 23.4844V15.3605H7.23047V12H10.1836V9.43875C10.1836 6.52547 11.918 4.91625 14.5744 4.91625C15.8466 4.91625 17.1769 5.14313 17.1769 5.14313V8.0025H15.7106C14.2669 8.0025 13.8164 8.89875 13.8164 9.81797V12H17.0405L16.5248 15.3605H13.8164V23.4844C19.3739 22.6116 23.625 17.8022 23.625 12Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="mpl-navbar-content">
-                <ul class="mpl-navbar-nav active">
-                    <li>
-                        <a href="/aboutMe" class="mpl-nav-link">
-                            <span class="mpl-nav-link-name">About Me</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolio" class="mpl-nav-link">
-                            <span class="mpl-nav-link-name">My Works </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact" class="mpl-nav-link">
-                            <span class="mpl-nav-link-name">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- /Navbar -->
+        </nav>
+        <!-- /Navbar -->
         <!-- Navbar Mobile -->
         <nav class="mpl-navbar mpl-navbar-mobile">
             <div class="mpl-navbar-container">
                 <div class="mpl-navbar-head">
-                    <a href="/" class="mpl-navbar-brand">
-                        <img src="../assets/images/logo-studio.svg" alt="">
+                    <a href="index.html" class="mpl-navbar-brand">
+                        <img src="assets/images/logo-studio.svg" alt="">
                     </a>
                     <a href="#" class="mpl-navbar-toggle">
                         <span></span><span></span><span></span><span></span>
@@ -78,19 +94,19 @@
                 </div>
                 <div class="mpl-navbar-body">
                     <ul class="mpl-navbar-nav">     
-                        <li>
-                            <a href="/aboutMe" class="mpl-nav-link">
-                                <span class="mpl-nav-link-name">About Me </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/portfolio" class="mpl-nav-link">
-                                <span class="mpl-nav-link-name">My Works </span>
-                            </a>
-                        </li>
                         <li class="active">
+                            <a href="/aboutMe" class="mpl-nav-link">
+                                <span id="navAbout" class="mpl-nav-link-name"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/porfolio" class="mpl-nav-link">
+                                <span id="navWorks" class="mpl-nav-link-name"></span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="/contact" class="mpl-nav-link">
-                                <span class="mpl-nav-link-name">Contact </span>
+                                <span id="navContact" class="mpl-nav-link-name"></span>
                             </a>
                         </li>
                     </ul>

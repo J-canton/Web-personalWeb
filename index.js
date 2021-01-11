@@ -96,8 +96,14 @@ app.get('/getMail',
     })
 
 app.use(
-    (req,res,next)=>{
+    (req,res)=>{
         res.status(404).sendFile(path.join(__dirname + '/public/pages/404.html'));
+    }
+)
+
+app.use(
+    (req, res)=>{
+        res.status(500).sendFile(path.join(__dirname + '/public/pages/500.html'));
     }
 )
 
