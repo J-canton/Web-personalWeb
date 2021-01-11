@@ -1,7 +1,10 @@
 $(document).ready(
     ()=>{
         //PRELOADER
-        printText($('#preloader'), configs.es.preloader);
+        printText($('#preloader'), configs.es.preloader.index);
+        printText($('#preloaderAbout'), configs.es.preloader.about);
+        printText($('#preloaderPortfolio'), configs.es.preloader.portfolio);
+        printText($('#preloaderContact'), configs.es.preloader.contact);
         //MAIN NAV
         printText($('#navAbout'), configs.es.components.mainNav.about);
         printText($('#navWorks'), configs.es.components.mainNav.works);
@@ -57,6 +60,19 @@ $(document).ready(
         printAtributes($('#aboutDesignAdobe'),'style', configs.es.texts.about.aboutDesignAdobeSkill);
         printText($('#aboutDesignBlender'), configs.es.texts.about.aboutDesignBlender);
         printAtributes($('#aboutDesignBlender'),'style', configs.es.texts.about.aboutDesignBlenderSkill);
+        //PORTFOLIO
+        printAtributes($('#portfolioHeader'), 'src', configs.es.imgs.portfolioHeaderImg);
+        printAtributes($('#portfolioAlt'), 'alt', configs.es.imgs.portfolioHeaderAlt);
+        printText($('#tabAll'),configs.es.texts.portfolio.tabAll);
+        printText($('#tabGames'),configs.es.texts.portfolio.tabGames);
+        printText($('#tab3d'),configs.es.texts.portfolio.tab3d);
+        printText($('#tabConcept'),configs.es.texts.portfolio.tabConcept);
+        printText($('#tabDesign'),configs.es.texts.portfolio.tabDesign);
+        //GAME
+        printText($('#gameArkanoidTitle'),configs.es.texts.game.gameArkanoidTitle);
+        printText($('#gameArkanoidText'),configs.es.texts.game.gameArkanoidText);
+        printText($('#gameArkanoidContent'),configs.es.texts.game.gameArkanoidContent);
+        printText($('#playBtn'), configs.es.texts.game.playBtn);
         //CONTACT
         printAtributes($('#contactHeader'), 'src', configs.es.imgs.contactHeaderImg);
         printAtributes($('#contactHeader'), 'alt', configs.es.imgs.contactHeaderAlt);

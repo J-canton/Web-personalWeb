@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon --watch index.js",
+    "watch": "npm run watch-code && npm run watch-scss",
+    "watch-code": "nodemon --watch index.js",
+    "watch-scss": "node-sass -w public/assets/styles/scss -o public/assets/styles/css/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build"
   },

@@ -54,31 +54,32 @@ let data = [
 
 app.get('/', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/pages/index.html'))
+        res.sendFile(path.join(__dirname + '/public/pages/index.html'));
     }
 )
 
 app.get('/contact', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/pages/contact.html'))
+        res.sendFile(path.join(__dirname + '/public/pages/contact.html'));
     }
 )
 
 app.get('/aboutMe', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/pages/aboutMe.html'))
+        res.sendFile(path.join(__dirname + '/public/pages/aboutMe.html'));
     }
 )
 
 app.get('/portfolio', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/pages/portfolio.html'))
+        res.sendFile(path.join(__dirname + '/public/pages/portfolio.html'));
     }
 )
 
-app.get('/games/arkanoid', 
+
+app.get('/games', 
     (req, res)=>{
-        res.sendFile(path.join(__dirname + '/public/games/arkanoid/index.html'));
+        res.sendFile(path.join(__dirname + '/public/pages/shop-product.html'));
     }
 )
 
