@@ -1,56 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const fs = require('fs');
-const csv = require('csv-parser');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;  
-const moment = require('moment');
-
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-const csvWriter = createCsvWriter(
-    {
-        path: 'data.csv',
-        header: [
-            {id: 'date', title:'Date'},
-            {id: 'name', title: 'Name'},
-            {id: 'email', title: 'Email'},
-            {id: 'subject', title: 'Subject'},
-            {id: 'msg', titile: 'Msg'}
-        ]
-    }
-)
-
-function readCsv(){
-    fs.createReadStream('data.csv')
-        .pipe(csv())
-        .on('data', 
-        (row)=>{
-            console.log(row);
-        }
-    ).on('end', ()=>{
-        console.log('CSV PROCESSED');
-    })
-}
-
-function writeCsv(){
-    csvWriter.writeRecords(data).then(()=>{console.log('CSV WRITTEN')})
-}
-
-
-let data = [
-    {
-        date: moment().format('Do MMMM  YYYY, h:mm:ss a'),
-        name: 'Mismo',
-        email: 'mismo@mismo.com',
-        subject: 'mismo',
-        msg: 'Lorem ipsum dolor sit amet...'
-    }
-]
-
-
-
 
 app.get('/', 
     (req, res)=>{
@@ -76,6 +28,12 @@ app.get('/portfolio',
     }
 )
 
+app.get('/portfolio/:type/:name', 
+    (req,res)=>{
+        res.sendFile(path.join(__dirname + `/public/${req.params.type}/${req.params.name}/index.html`));
+    }
+)
+
 
 app.get('/games', 
     (req, res)=>{
@@ -83,18 +41,6 @@ app.get('/games',
     }
 )
 
-app.post('/sendMail', 
-    (req,res)=>{
-        console.log('SEND');
-        writeCsv();
-    }
-);
-
-app.get('/getMail', 
-    (req,res)=>{
-        console.log('GET');
-        readCsv();
-    })
 
 app.use(
     (req,res)=>{
