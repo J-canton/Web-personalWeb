@@ -69,6 +69,7 @@ $(document).ready(
         printText($('#tabConcept'),configs.es.texts.portfolio.tabConcept);
         printText($('#tabDesign'),configs.es.texts.portfolio.tabDesign);
         //GAME
+        printText($('#preloaderGameArkanoid'), configs.es.texts.game.gameArkanoidTitle);
         printText($('#gameArkanoidTitle'),configs.es.texts.game.gameArkanoidTitle);
         printText($('#gameArkanoidText'),configs.es.texts.game.gameArkanoidText);
         printText($('#gameArkanoidContent'),configs.es.texts.game.gameArkanoidContent);

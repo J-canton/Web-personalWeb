@@ -7,7 +7,10 @@ const configs = {
             portfolio: 'PORTFOLIO',
             contact: 'CONTACT',
             pageNotFound: '404',
-            internalError: '500'
+            internalError: '500',
+            games:{
+                arkanoid: 'CLONOID'
+            }
         },
         rrssUrls: 
         {

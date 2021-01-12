@@ -30,7 +30,7 @@ app.get('/portfolio',
 
 app.get('/portfolio/:type/:name', 
     (req,res)=>{
-        res.sendFile(path.join(__dirname + `/public/${req.params.type}/${req.params.name}/index.html`));
+        res.sendFile(path.join(__dirname + `/public/pages/${req.params.type}/${req.params.name}.html`));
     }
 )
 
